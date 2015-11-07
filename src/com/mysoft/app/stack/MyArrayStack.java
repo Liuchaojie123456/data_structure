@@ -68,6 +68,16 @@ public class MyArrayStack implements MyStack<String> {
 		return data;
 	}
 	
+	@Override
+	public void clear() {
+		// 元素置空,方便GC回收
+		for(int i=0; i<size; i++){
+			arr[i] = null;
+		}
+		// 长度置空
+		size = 0;
+	}
+	
 	/**
 	 * 数组扩容
 	 */

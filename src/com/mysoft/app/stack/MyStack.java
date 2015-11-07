@@ -35,4 +35,9 @@ public interface MyStack<T> {
 	 * 数据出栈
 	 */
 	T pop();
+	
+	/**
+	 * 清空栈
+	 */
+	void clear();
 }
